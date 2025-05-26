@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowMuse Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" /> -->
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">GlowMuse</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Glow Naturally, Shine Beautifully</h1>
+      <p>Shop top beauty brands with confidence.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <img src="about us.jpg" alt="Model">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>At GlowMuse, we bring premium skincare and beauty products from around the world directly to your doorstep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="lipstick.jpg" alt="Lipstick" />
+        <h4>Matte Lipstick</h4>
+      </div>
+      <div class="product-card">
+        <img src="last image.jpg" alt="Skincare" />
+        <h4>Hydrating Serum</h4>
+      </div>
+      <div class="product-card">
+        <img src="foundation.jpg" alt="Foundation" />
+        <h4>Liquid Foundation</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">Skincare Consultation</div>
+      <div class="service-card">Haircare Routine</div>
+      <div class="service-card">Makeup Guide</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 GlowMuse. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">// Simple scroll animation
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  sections.forEach((sec) => {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 150;
+    const height = sec.offsetHeight;
+    if (top >= offset && top < offset + height) {
+      sec.classList.add("fade-in");
+    }
+  });
+});
+</script>
+</body>
+</html>
